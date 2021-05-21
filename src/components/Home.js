@@ -1,36 +1,29 @@
 import React from 'react'
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 
 function Home() {
     return (
-        <Header>
-            <p>Niraj Lama</p>
-            <i class="fas fa-arrow-circle-down"></i>
-        </Header>
+        <Background>
+            <p>Welcome to my portfolio. Here you can view my projects and more.</p>
+        </Background>
     )
 }
 
 export default Home
 
-const slideFromTop = keyframes`
-    from { transform: translateY(-100%); opacity: 0.3; }
-    to { transform: translateY(0%); opacity: 1; }
-`
 
-const Header = styled.div`
-    color: white;
-    text-transform: uppercase;
-    text-align:center;
+const Background = styled.div`
+    width: 90%;
+    border: 1px solid white;
+    background: white;
+    color: #000;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
 
     p {
-        font-size: 50px;
+        font-size: 20px;
         font-weight: 600;
-        padding: 16px 28px;
-    }
-
-    i{
-        font-size: 70px;
-        animation: ${slideFromTop} ease-in 1s;
     }
 `
 
