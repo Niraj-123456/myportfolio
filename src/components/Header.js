@@ -79,6 +79,7 @@ const NavBar = styled.div`
                 text-decoration: none;
                 color: #f9f9f9;
                 text-transform: uppercase;
+                transition: all 0.2s ease-in;
 
                 &:hover {
                     color: gray;
