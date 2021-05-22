@@ -60,6 +60,8 @@ const About = styled.div`
     width: 100%;
     box-shadow: 0 20px 30px 10px rgba(0, 0, 0, 0.5);
     border-radius: 0 0 2px 2px;
+    width: 100%;
+    min-width: 100%;
 
     p {
         font-size: 15px;
@@ -76,6 +78,7 @@ const CardContainer = styled.div`
     justify-content: center;
     margin-top: 50px;
     color: #f9f9f9;
+    width: 100%;
 `
 
 const CardImg = styled.div`
@@ -100,13 +103,14 @@ const CardImg = styled.div`
 `
 
 const MainCard = styled(CardImg)`
-    width: 80%;
+    width: 100%;
     margin: auto;
     margin-top: 50px;
     color: #f9f9f9;
 
     img {
         width: 100%;
+        height: 500px;
     }
 
 `

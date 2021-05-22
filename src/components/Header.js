@@ -10,7 +10,7 @@ function Header() {
                     <li><a href="#" className="active">Home</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Contact Me</a></li>
-                    <li><Link to="/about">About Me</Link></li>
+                    <li><Link to={'/about'}>About Me</Link></li>
                     <li><a href="#">Certifications</a></li>
                 </ul>
                 <Icon>
