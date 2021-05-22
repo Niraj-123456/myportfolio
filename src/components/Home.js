@@ -3,10 +3,13 @@ import styled from 'styled-components'
 
 function Home() {
     return (
-        <Main>
-            <Background>
-                <p>Welcome to my portfolio. Here you can view my projects and more.</p>
-            </Background>
+        <Main>   
+            <About>
+                <p>Welcome to my portfolio. Here you can view my projects and more. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </About>
             <MainCard>
                 <img src="https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg" />
                 <h1>Main Project</h1>
@@ -46,19 +49,24 @@ export default Home
 const Main = styled.div`
     width: 90%;
     margin: auto;
+    margin-top: 50px;
 `
-const Background = styled.div`
-    border: 1px solid white;
+
+const About = styled.div`
+    margin: 0;
     background: white;
     color: #000;
-    margin-top: 50px;
     text-align: center;
+    width: 100%;
     box-shadow: 0 20px 30px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 2px;
+    border-radius: 0 0 2px 2px;
 
     p {
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 600;
+        opacity: 0.8;
+        padding: 10px 10px;
+        margin: 0;
     }
 `
 
@@ -83,7 +91,7 @@ const CardImg = styled.div`
     }
 
     p {
-        font-size: 15px;
+        font-size: 13px;
         opacity: 0.8;
         width: 90%;
         margin: auto;
