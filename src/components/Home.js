@@ -4,7 +4,7 @@ import Card from './Card'
 
 function Home() {
     return (
-        <Container>
+        <Container id="home">
             <Card />
         </Container>
     )

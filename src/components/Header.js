@@ -5,16 +5,15 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 function Header() {
     return (
-        <Main>
+        <Main id="header">
             <NavBar>
                 <ul>
-                    <li><a href="#" className="active">Home</a></li>
-                    <li><AnchorLink href='#projects' offset='50'>Projects</AnchorLink></li>
-                    <li><AnchorLink href='#about' offset='50'>About Me</AnchorLink></li>
-                    <li><a href="#">Contact Me</a></li>
+                    <li><AnchorLink href='#header' offset='120' className="active">Home</AnchorLink></li>
+                    <li><AnchorLink href='#projects' offset='80'>Projects</AnchorLink></li>
+                    <li><AnchorLink href='#about' offset='80'>About Me</AnchorLink></li>
+                    <li><AnchorLink href='#contact' offset='80'>contact Me</AnchorLink></li>
                     <li><a href="#">Certifications</a></li>
                 </ul>
-                
                 
                 <Icon>
                     <a href="#"><i class="fab fa-facebook-square"></i></a>
@@ -26,6 +25,9 @@ function Header() {
                 <h1>Niraj Lama</h1>
                 <i class="fas fa-arrow-circle-down"></i>
             </Name>
+            <Welcome>
+                <p>Welcome</p>
+            </Welcome>
         </Main>
     )
 }
@@ -45,9 +47,10 @@ const Name = styled.div`
     color: white;
     text-transform: uppercase;
     text-align:center;
+    margin-top: 150px;
 
     h1 {
-        font-size: 70px;
+        font-size: 80px;
         font-weight: 600;
         padding: 16px 28px;
     }
@@ -59,10 +62,11 @@ const Name = styled.div`
 `
 
 const NavBar = styled.div`
+    position: fixed;
+    top: 0%;
     display: flex;
     align-items: center;
     background: #000;
-    opacity: 1;
     width: 100%;
     height: 70px;
 
@@ -112,6 +116,40 @@ const Icon = styled.div`
         i {
             font-size: 30px;
             color: #f9f9f9;
+        }
+    }
+`
+
+const Welcome = styled.div`
+    margin: 0;
+    margin-top: 50px;
+    color: #f9f9f9;
+    text-align: center;
+    width: 100%;
+    width: 100%;
+    min-width: 100%;
+
+    p {
+        font-size: 50px;
+        font-style: italic;
+        font-weight: 600;
+        opacity: 0.5;
+        padding: 10px 10px;
+        margin: 0;
+        position: relative;
+
+        &::before, &::after {
+            position: absolute;
+            top: 55%;
+            left: 38%;
+            content: '';
+            width: 50px;
+            height: 2px;
+            background-color: #f9f9f9;
+        }
+
+        &::after {
+            left: 58.5%;
         }
     }
 `

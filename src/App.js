@@ -9,6 +9,7 @@ import About from './components/About'
 //   Route,
 //   Link
 // } from "react-router-dom";
+import Contact from './components/Contact'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Header />
           <Home />
           <About />
+          <Contact />
         <Footer />
     </div>
   );

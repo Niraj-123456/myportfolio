@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function About() {
+function Contact() {
     return (
-        <Main id="about">
-            <Heading>About Me</Heading>
+        <Main id="contact">
+            <Heading>Contact Me</Heading>
             <Content>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -13,13 +13,12 @@ function About() {
     )
 }
 
-export default About
+export default Contact
 
 const Main = styled.div`
+    height: 600px;
     width: 90%;
     margin: auto;
-    margin-top: 50px;
-    height: 600px;
     color: #f9f9f9;
 `
 
