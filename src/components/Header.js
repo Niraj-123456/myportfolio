@@ -1,6 +1,7 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
 import { Link } from 'react-router-dom'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 function Header() {
     return (
@@ -8,11 +9,13 @@ function Header() {
             <NavBar>
                 <ul>
                     <li><a href="#" className="active">Home</a></li>
-                    <li><a href="#">Projects</a></li>
+                    <li><AnchorLink href='#projects' offset='50'>Projects</AnchorLink></li>
+                    <li><AnchorLink href='#about' offset='50'>About Me</AnchorLink></li>
                     <li><a href="#">Contact Me</a></li>
-                    <li><Link to={'/about'}>About Me</Link></li>
                     <li><a href="#">Certifications</a></li>
                 </ul>
+                
+                
                 <Icon>
                     <a href="#"><i class="fab fa-facebook-square"></i></a>
                     <a href="#"><i class="fab fa-instagram-square"></i></a>

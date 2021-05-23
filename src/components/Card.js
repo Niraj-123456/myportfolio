@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 function Card() {
     return (
-        <Main>   
+        <Main id="projects">   
             <About>
                 <p>Welcome to my portfolio. Here you can view my projects and more. 
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
