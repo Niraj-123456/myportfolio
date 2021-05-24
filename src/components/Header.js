@@ -1,6 +1,5 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
-import { Link } from 'react-router-dom'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 function Header() {
@@ -21,13 +20,15 @@ function Header() {
                     <a href="#"><i class="fab fa-github-square"></i></a>
                 </Icon>
             </NavBar>
-            <Name>
-                <h1>Niraj Lama</h1>
-                <i class="fas fa-arrow-circle-down"></i>
-            </Name>
-            <Welcome>
-                <p>Welcome</p>
-            </Welcome>
+            <HeroImage>
+                <Name>
+                    <h1>Hello, I'm Niraj Lama</h1>
+                    <h4>Front End Developer</h4>
+                    <i class="fas fa-arrow-circle-down"></i>
+                    <p>Welcome</p>
+                </Name>
+            </HeroImage>
+            
         </Main>
     )
 }
@@ -35,29 +36,78 @@ function Header() {
 export default Header
 
 const slideFromTop = keyframes`
-    from { transform: translateY(-100%); opacity: 0.3; font-size: 50px; }
+    from { transform: translateY(-100%); opacity: 0.3; }
     to { transform: translateY(0%); opacity: 1; }
 `
 
 const Main = styled.div`
+    
+`
 
+const HeroImage = styled.div`
+    position: relative;
+    margin: 0;
+    top: 0;
+    width: 100%;
+    height: 650px;
+    background-image: url('images/hero_image_2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    z-index: -1;
 `
 
 const Name = styled.div`
+    position: absolute;
+    top: 25%;
+    left: 0%;
     color: white;
+    width: 100%;
     text-transform: uppercase;
     text-align:center;
-    margin-top: 150px;
+    animation: ${slideFromTop} ease-in 1.5s;
 
     h1 {
         font-size: 80px;
-        font-weight: 600;
-        padding: 16px 28px;
+        font-weight: 400;
+        padding: 0 10px;
+        margin: 0;
+        
+    }
+
+    h4 {
+        font-size: 20px;
+        font-weight: 300;
     }
 
     i{
+        padding: 25px 0;
         font-size: 70px;
-        animation: ${slideFromTop} ease-in 1s;
+    }
+
+    p {
+        font-size: 50px;
+        font-style: italic;
+        font-weight: 400;
+        opacity: 0.5;
+        padding: 30px 10px;
+        margin: 0;
+        position: relative;
+
+        &::before, &::after {
+            position: absolute;
+            top: 55%;
+            left: 36%;
+            content: '';
+            width: 50px;
+            height: 2px;
+            background-color: #f9f9f9;
+        }
+
+        &::after {
+            left: 60%;
+        }
     }
 `
 
@@ -66,6 +116,7 @@ const NavBar = styled.div`
     top: 0%;
     display: flex;
     align-items: center;
+    justify-content: center;
     background: #000;
     width: 100%;
     height: 70px;
@@ -106,7 +157,8 @@ const Icon = styled.div`
     justify-content: flex-end;
 
     a {
-        padding: 0 15px;
+        margin-right: 20px;
+        padding: 8px 0;
         transition: all 0.2s ease-in;
 
         &:hover {
@@ -114,42 +166,8 @@ const Icon = styled.div`
         }
 
         i {
-            font-size: 30px;
-            color: #f9f9f9;
-        }
-    }
-`
-
-const Welcome = styled.div`
-    margin: 0;
-    margin-top: 50px;
-    color: #f9f9f9;
-    text-align: center;
-    width: 100%;
-    width: 100%;
-    min-width: 100%;
-
-    p {
-        font-size: 50px;
-        font-style: italic;
-        font-weight: 600;
-        opacity: 0.5;
-        padding: 10px 10px;
-        margin: 0;
-        position: relative;
-
-        &::before, &::after {
-            position: absolute;
-            top: 55%;
-            left: 38%;
-            content: '';
-            width: 50px;
-            height: 2px;
-            background-color: #f9f9f9;
-        }
-
-        &::after {
-            left: 58.5%;
+            font-size: 25px;
+            color: #fff;
         }
     }
 `

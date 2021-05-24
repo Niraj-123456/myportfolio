@@ -70,15 +70,15 @@ const CardImg = styled.div`
     text-align: center;
     border-radius: 2px;
     box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
 
     &:first-child {
         grid-column: 1 / span 2;
     }
 
     img {
-        height: 300px;
-        object-fit: cover;
-        box-sizing: border-box;
+        height: 400px;
+        width: 100%;
     }
 
     p {
@@ -86,6 +86,5 @@ const CardImg = styled.div`
         opacity: 0.8;
         margin: auto;
         padding: 10px;
-        z-index: -1;
     }
 `

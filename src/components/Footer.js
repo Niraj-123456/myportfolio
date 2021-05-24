@@ -51,7 +51,7 @@ const Nav = styled.div`
         }
 
         i {
-            font-size: 30px;
+            font-size: 25px;
         }
     }  
 `
