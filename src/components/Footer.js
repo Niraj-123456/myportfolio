@@ -8,9 +8,9 @@ function Footer() {
             <FooterNav>
                 <p>&copy; copyright { date }</p>
                 <Nav>
-                    <a href="#"><i class="fab fa-facebook-square"></i></a>
-                    <a href="#"><i class="fab fa-instagram-square"></i></a>
-                    <a href="#"><i class="fab fa-github-square"></i></a>
+                    <a href="#"><i className="fab fa-facebook-square"></i></a>
+                    <a href="#"><i className="fab fa-instagram-square"></i></a>
+                    <a href="#"><i className="fab fa-github-square"></i></a>
                 </Nav>
             </FooterNav> 
         </div>

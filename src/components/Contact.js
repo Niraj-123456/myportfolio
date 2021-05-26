@@ -31,4 +31,5 @@ const Heading = styled.h1`
 const Content = styled.p`
     text-align: center;
     font-size: 16px;
+    font-weight: 300;
 `

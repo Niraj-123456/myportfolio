@@ -5,9 +5,11 @@ function About() {
     return (
         <Main id="about">
             <Heading>About Me</Heading>
-            <Content>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            <Content>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
             </Content>
         </Main>
     )
@@ -29,7 +31,12 @@ const Heading = styled.h1`
     font-weight: 300;
 `
 
-const Content = styled.p`
+const Content = styled.div`
     text-align: center;
-    font-size: 16px;
+    
+    p {
+        
+        font-size: 16px;
+        font-weight: 300;
+    }
 `

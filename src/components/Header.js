@@ -1,30 +1,30 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import { Link, animateScroll as scroll } from "react-scroll";
+
 
 function Header() {
     return (
         <Main id="header">
-            <NavBar>
+            <NavBar>     
                 <ul>
-                    <li><AnchorLink href='#header' offset='120' className="active">Home</AnchorLink></li>
-                    <li><AnchorLink href='#projects' offset='80'>Projects</AnchorLink></li>
-                    <li><AnchorLink href='#about' offset='80'>About Me</AnchorLink></li>
-                    <li><AnchorLink href='#contact' offset='80'>contact Me</AnchorLink></li>
-                    <li><a href="#">Certifications</a></li>
-                </ul>
-                
+                    <li><Link to='header' activeClass="active" spy={true} smooth={true} duration={1000} offset={-80}>Home</Link></li>
+                    <li><Link to='projects' activeClass="active" spy={true} smooth={true} duration={1000} offset={-80}>Projects</Link></li>
+                    <li><Link to='about' activeClass="active" spy={true} smooth={true} duration={1000} offset={-80}>About Me</Link></li>
+                    <li><Link to='contact' activeClass="active" spy={true} smooth={true} duration={1000} offset={-80}>contact Me</Link></li>
+                    <li><Link to="certification" activeClass="active" spy={true} smooth={true} duration={1000} offset={-80}>Certifications</Link></li>
+                </ul>      
                 <Icon>
-                    <a href="#"><i class="fab fa-facebook-square"></i></a>
-                    <a href="#"><i class="fab fa-instagram-square"></i></a>
-                    <a href="#"><i class="fab fa-github-square"></i></a>
+                    <a href="#"><i className="fab fa-facebook-square"></i></a>
+                    <a href="#"><i className="fab fa-instagram-square"></i></a>
+                    <a href="#"><i className="fab fa-github-square"></i></a>
                 </Icon>
             </NavBar>
             <HeroImage>
                 <Name>
                     <h1>Hello, I'm Niraj Lama</h1>
                     <h4>Front End Developer</h4>
-                    <i class="fas fa-arrow-circle-down"></i>
+                    <i className="fas fa-arrow-circle-down"></i>
                     <p>Welcome</p>
                 </Name>
             </HeroImage>
@@ -133,11 +133,12 @@ const NavBar = styled.div`
             padding: 10px 10px;
             margin: 0 10px;
 
-            a {
+             a {
                 text-decoration: none;
                 color: #f9f9f9;
                 text-transform: uppercase;
                 transition: all 0.2s ease-in;
+                cursor: pointer;
 
                 &:hover {
                     color: gray;
