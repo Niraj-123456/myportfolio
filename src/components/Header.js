@@ -170,8 +170,8 @@ const Logo =styled.div`
     h4 {
         color: #fff;
         padding: 0 10px;
-        margin: 0 10px;
-        font-size: 16px;
+        margin: 0 20px;
+        font-size: 20px;
         font-weight: 500;
     }
 `

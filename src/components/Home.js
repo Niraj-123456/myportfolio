@@ -5,23 +5,23 @@ import Card from './Card'
 const projectDataArr = [
     {
       id: '1',
-      projectName: 'Project 1',
+      projectName: 'Basic JavaScript Project',
       projectImg: 'images/screenshot-niraj-123456.github.io-2021.05.26-20_47_53.png',
-      projectDesc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      projectDesc: 'This project is a basic javascript project which includes different apps such as rock, paper, scissor game, cat image generator using flex box, age convertor and lastly blackjack game.',
       completionDate: 'April 1, 2020'
     },
     {
       id: '2',
-      projectName: 'Project 2',
+      projectName: 'Disney Plus Clone using Reactjs, Redux & Styled-Components',
       projectImg: 'https://previews.123rf.com/images/engkritchaya/engkritchaya1703/engkritchaya170300102/75165087-header-for-architect-concept-with-equipment-of-creative-project-background-architect-desk-.jpg',
-      projectDesc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      projectDesc: 'This project is a clone of disney plus app using reactjs, redux and styled components. This project includes firebase for a backend database for content and user login.',
       completionDate: 'May 1, 2020'
     },
     {
       id: '3',
-      projectName: 'Project 3',
+      projectName: 'React Project Diary',
       projectImg: 'https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3978884.jpg',
-      projectDesc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      projectDesc: 'This React project includes different apps such as tic tac toe game, clock app, timer and blackjack game using react hooks.',
       completionDate: 'June 1, 2020'
     },
     {

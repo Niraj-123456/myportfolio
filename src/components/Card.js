@@ -31,8 +31,12 @@ const CardImg = styled.div`
         box-sizing: content-box;
     }
 
+    h1 {
+        padding: 0 10px;
+    }
+
     p {
-        font-size: 13px;
+        font-size: 15px;
         font-weight: 300;
         opacity: 0.8;
         margin: auto;
