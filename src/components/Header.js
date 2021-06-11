@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 
 function Header() {
@@ -132,20 +132,32 @@ const NavBar = styled.div`
             padding: 10px 10px;
             margin: 0 10px;
 
+
              a {
                 text-decoration: none;
                 color: #f9f9f9;
                 text-transform: uppercase;
                 transition: all 0.2s ease-in;
                 cursor: pointer;
+                position: relative;
 
                 &:hover {
                     color: gray;
                 }
 
                 &.active {
-                color: gray;
-                }       
+                    color: gray;
+                }
+
+                &.active::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -10px;
+                    height: 1px;
+                    width: 100%;
+                    background-color: #f9f9f9;
+                }   
             }
         }
         li:nth-last-of-type(1) {
