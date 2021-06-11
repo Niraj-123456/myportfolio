@@ -6,8 +6,8 @@ function Certification() {
         <Container id="certification">
             <h2>Certifications</h2>
             <Content>
-                <p>Here are all the certicates from the completion of different online courses. The certificate provider includes 
-                    Udemy, Cisco Acedemy, etc. The courses were 3 or more hours long and included basics concepts to advanced level 
+                <p>Here are all the certificates from the completion of different online courses. The certificate provider includes 
+                    Udemy, Cisco Acedemy, etc. The courses were 1 or more hours long and included basics concepts to advanced level 
                     knowledge. The courses were really helpful in the upliftment of my knowledge and skills.
                 </p>
             </Content>
@@ -15,12 +15,16 @@ function Certification() {
                 <Card>
                     <a href="https://drive.google.com/file/d/1Vb4wLxcWBh-MnBQtPPVGochWuIQ0w5yJ/view?usp=sharing" target="_blank">
                         <img src="images/reactjs_certification_img.png"/></a>
-                    <p>Sint nostrud in proident pariatur nisi incididunt commodo nisi sint. Reprehenderit non excepteur</p>
+                    <p>This certificate is issued by Udemy to me for the completion of Complete ReactJs Course- Basics to Advanced (2021) 
+                        online course on May 4, 2021.
+                    </p>
                 </Card>
                 <Card>
                     <a href="https://drive.google.com/file/d/1Vb4wLxcWBh-MnBQtPPVGochWuIQ0w5yJ/view?usp=sharing" target="_blank">
                         <img src="images/Reactjs-ES6-Certification.jpg"/></a>
-                    <p>Sint nostrud in proident pariatur nisi incididunt commodo nisi sint. Reprehenderit non excepteur</p>
+                    <p>This certificate is issued by Udemy to me for the completion of Modern JavaScript for ReactJs- ES6 online course 
+                        on May 28, 2021.
+                    </p>
                 </Card>
             </Certificate>
         </Container>
@@ -75,8 +79,7 @@ const Card = styled.div`
     p {
         text-align: center;
         color: #fff;
-        background-color: #051adb;
-        padding: 50px 0;
+        padding: 20px 10px;
         margin: 0;
     }
 `
