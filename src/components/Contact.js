@@ -26,6 +26,7 @@ const Main = styled.div`
     margin: auto;
     margin-top: 150px;
     color: #f9f9f9;
+    letter-spacing: 2px;
 `
 
 const Heading = styled.h1`

@@ -34,6 +34,7 @@ const Main = styled.div`
     margin-top: 50px;
     height: 600px;
     color: #f9f9f9;
+    letter-spacing: 2px;
 `
 
 const Heading = styled.h1`
@@ -49,7 +50,6 @@ const Content = styled.div`
     
     p {
         line-height: 30px;
-        letter-spacing: 2px;
         font-size: 16px;
         font-weight: 300;
     }

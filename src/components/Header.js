@@ -117,6 +117,7 @@ const NavBar = styled.div`
     background: #000;
     width: 100%;
     height: 70px;
+    letter-spacing: 2px;
 
     ul {
         display: flex;

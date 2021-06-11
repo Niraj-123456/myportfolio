@@ -95,6 +95,7 @@ const Card = styled.div`
         background-color: #355c7a;
         padding: 0 10px;
         font-size: 15px;
+        letter-spacing: 2px;
         box-shadow: -2px 2px 5px 1px rgba(0, 0, 0, 0.5);
         transition: all 0.2s ease-in;
         cursor: pointer;

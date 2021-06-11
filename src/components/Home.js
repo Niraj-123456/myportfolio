@@ -65,6 +65,7 @@ const Main = styled.div`
     width: 80%;
     margin: auto;
     margin-top: 100px;
+    letter-spacing: 2px;
 `
 
 const Heading = styled.h1`

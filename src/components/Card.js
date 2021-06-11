@@ -53,9 +53,11 @@ const CardImg = styled.div`
             background-color: #355c7a;
             border: none;
             margin: 10px;
+            padding: 0 10px;
             cursor: pointer;
             color: #fff;
             border-radius: 4px;
+            letter-spacing: 2px;
             box-shadow: -2px 2px 5px 1px rgba(0, 0, 0, 0.5);
             transition: all 0.2s ease-in;
 
