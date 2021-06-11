@@ -7,7 +7,7 @@ function About() {
             <Heading>About Me</Heading>
             <Content>
                 <Photo>
-                    <img src="#" />
+                    <i class="fas fa-user"></i>
                 </Photo>
                 <p>My Name is Niraj Lama. I am a Front End React Js Developer looking for an internship
                     opportunity. I live in Boudha-6, Tinchuli, Kathmandu. I am an undergraduated student and did
@@ -57,8 +57,16 @@ const Content = styled.div`
 
 const Photo = styled.div`
     background-color: #fff;
+    border: solid 2px #fff;
     height: 200px;
     width: 200px;
     margin: auto;
     border-radius: 50%;
+    overflow: hidden;
+
+    i {
+        margin-top: 5px;
+        color: #000;
+        font-size: 200px;   
+    }
 `
