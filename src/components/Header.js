@@ -6,7 +6,10 @@ import { Link, animateScroll as scroll } from "react-scroll";
 function Header() {
     return (
         <Main id="header">
-            <NavBar>     
+            <NavBar>  
+                <Logo>
+                    <h4>My Portfolio</h4>    
+                </Logo>  
                 <ul>
                     <li><Link to='header' activeClass="active" spy={true} smooth={true} duration={1000} offset={-80}>Home</Link></li>
                     <li><Link to='projects' activeClass="active" spy={true} smooth={true} duration={1000} offset={-80}>Projects</Link></li>
@@ -14,11 +17,6 @@ function Header() {
                     <li><Link to='contact' activeClass="active" spy={true} smooth={true} duration={1000} offset={-80}>contact Me</Link></li>
                     <li><Link to="certification" activeClass="active" spy={true} smooth={true} duration={1000} offset={-80}>Certifications</Link></li>
                 </ul>      
-                <Icon>
-                    <a href="#"><i className="fab fa-facebook-square"></i></a>
-                    <a href="#"><i className="fab fa-instagram-square"></i></a>
-                    <a href="#"><i className="fab fa-github-square"></i></a>
-                </Icon>
             </NavBar>
             <HeroImage>
                 <Name>
@@ -116,15 +114,16 @@ const NavBar = styled.div`
     top: 0%;
     display: flex;
     align-items: center;
-    justify-content: center;
     background: #000;
     width: 100%;
     height: 70px;
 
     ul {
         display: flex;
+        flex: 1;
+        justify-content: flex-end;
         align-items: center;
-        font-size: 20px;
+        font-size: 15px;
         margin: 0;
         height: 100%;
 
@@ -149,27 +148,19 @@ const NavBar = styled.div`
                 }       
             }
         }
+        li:nth-last-of-type(1) {
+            margin-right: 30px;
+        }
     }
 `
 
-const Icon = styled.div`
-    display: flex;
-    flex: 1;
-    justify-content: flex-end;
-
-    a {
-        margin-right: 20px;
-        padding: 8px 0;
-        transition: all 0.2s ease-in;
-
-        &:hover {
-            transform: scale(0.9, 0.9);
-        }
-
-        i {
-            font-size: 25px;
-            color: #fff;
-        }
+const Logo =styled.div`
+    h4 {
+        color: #fff;
+        padding: 0 10px;
+        margin: 0 10px;
+        font-size: 16px;
+        font-weight: 500;
     }
 `
 

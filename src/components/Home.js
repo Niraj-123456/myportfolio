@@ -6,7 +6,7 @@ const projectDataArr = [
     {
       id: '1',
       projectName: 'Project 1',
-      projectImg: 'https://previews.123rf.com/images/sdecoret/sdecoret1610/sdecoret161000629/63999852-hand-drawn-project-presentation-on-blue-background.jpg',
+      projectImg: 'images/screenshot-niraj-123456.github.io-2021.05.26-20_47_53.png',
       projectDesc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
       completionDate: 'April 1, 2020'
     },

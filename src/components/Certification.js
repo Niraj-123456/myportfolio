@@ -12,7 +12,16 @@ function Certification() {
                 </p>
             </Content>
             <Certificate>
-                <a href="https://drive.google.com/file/d/1Vb4wLxcWBh-MnBQtPPVGochWuIQ0w5yJ/view?usp=sharing" target="_blank"><img src="images/reactjs_certification_img.png"/></a>
+                <Card>
+                    <a href="https://drive.google.com/file/d/1Vb4wLxcWBh-MnBQtPPVGochWuIQ0w5yJ/view?usp=sharing" target="_blank">
+                        <img src="images/reactjs_certification_img.png"/></a>
+                    <p>Sint nostrud in proident pariatur nisi incididunt commodo nisi sint. Reprehenderit non excepteur</p>
+                </Card>
+                <Card>
+                    <a href="https://drive.google.com/file/d/1Vb4wLxcWBh-MnBQtPPVGochWuIQ0w5yJ/view?usp=sharing" target="_blank">
+                        <img src="images/Reactjs-ES6-Certification.jpg"/></a>
+                    <p>Sint nostrud in proident pariatur nisi incididunt commodo nisi sint. Reprehenderit non excepteur</p>
+                </Card>
             </Certificate>
         </Container>
     )
@@ -45,20 +54,29 @@ const Content = styled.div`
 `
 
 const Certificate = styled.div`
-    margin-top: 20px;
+    margin-top: 50px;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto auto;
     gap: 20px;
+`
+
+const Card = styled.div`
+    background-color: #fff transparent;
+    width: 100%;
+    box-sizing: content-box;
+    box-shadow: 0px 5px 8px 3px rgba(0, 0, 0, 0.5);
 
     img {
-        width: 80%;
-        height: 500px;
-        border-radius: 2px;
+        height: auto;
+        width: 100%;
+    }
 
-        &:hover {
-            box-shadow: 0 5px 8px 8px rgba(0, 0, 0, 0.5);
-            transform: scale(1.01, 1.01);
-        }
+    p {
+        text-align: center;
+        color: #fff;
+        background-color: #051adb;
+        padding: 50px 0;
+        margin: 0;
     }
 `
