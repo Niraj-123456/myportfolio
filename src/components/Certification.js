@@ -13,18 +13,20 @@ function Certification() {
             </Content>
             <Certificate>
                 <Card>
-                    <a href="https://drive.google.com/file/d/1Vb4wLxcWBh-MnBQtPPVGochWuIQ0w5yJ/view?usp=sharing" target="_blank">
-                        <img src="images/reactjs_certification_img.png"/></a>
+                    <img src="images/reactjs_certification_img.png"/>
                     <p>This certificate is issued by Udemy to me for the completion of Complete ReactJs Course- Basics to Advanced (2021) 
                         online course on May 4, 2021.
                     </p>
+                    <a href="https://drive.google.com/file/d/1Vb4wLxcWBh-MnBQtPPVGochWuIQ0w5yJ/view?usp=sharing" target="_blank">
+                    <button>View Certificate</button></a>
                 </Card>
                 <Card>
-                    <a href="https://drive.google.com/file/d/1Vb4wLxcWBh-MnBQtPPVGochWuIQ0w5yJ/view?usp=sharing" target="_blank">
-                        <img src="images/Reactjs-ES6-Certification.jpg"/></a>
+                    <img src="images/Reactjs-ES6-Certification.jpg"/>
                     <p>This certificate is issued by Udemy to me for the completion of Modern JavaScript for ReactJs- ES6 online course 
                         on May 28, 2021.
                     </p>
+                    <a href="https://drive.google.com/file/d/1Vb4wLxcWBh-MnBQtPPVGochWuIQ0w5yJ/view?usp=sharing" target="_blank">
+                    <button>View Certificate</button></a>
                 </Card>
             </Certificate>
         </Container>
@@ -37,6 +39,7 @@ const Container = styled.div`
     width: 80%;
     margin: auto;
     text-align: center;
+    letter-spacing: 2px;
 
     h2 {
         font-size: 30px;
@@ -69,7 +72,7 @@ const Card = styled.div`
     background-color: #fff transparent;
     width: 100%;
     box-sizing: content-box;
-    box-shadow: 0px 5px 8px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: -5px 5px 5px 3px rgba(0, 0, 0, 0.5);
 
     img {
         height: auto;
@@ -81,5 +84,24 @@ const Card = styled.div`
         color: #fff;
         padding: 20px 10px;
         margin: 0;
+    }
+
+    button {
+        height: 40px;
+        margin: 20px auto;
+        border-radius: 4px;
+        border: none;
+        color: #fff;
+        background-color: #355c7a;
+        padding: 0 10px;
+        font-size: 15px;
+        box-shadow: -2px 2px 5px 1px rgba(0, 0, 0, 0.5);
+        transition: all 0.2s ease-in;
+        cursor: pointer;
+
+            &:hover {
+                transform: scale(1.1, 1.1);
+                background-color: #355aaa;
+            }
     }
 `
