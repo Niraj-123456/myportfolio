@@ -7,6 +7,8 @@ function Card(props) {
             <img src={ props.projectImg } />
             <h1>{ props.projectName }</h1>
             <p>{ props.projectDesc }</p>
+            <a type="button" href="#"><button>View Project</button></a>
+            <a type="button" href="#"><button>View Github Repo</button></a>
             <blockquote>Completed- { props.completed }</blockquote>
         </CardImg>
     )
@@ -41,6 +43,27 @@ const CardImg = styled.div`
         opacity: 0.8;
         margin: auto;
         padding: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        
+        button {
+            height: 40px;
+            background-color: #355c7a;
+            border: none;
+            margin: 10px;
+            cursor: pointer;
+            color: #fff;
+            border-radius: 4px;
+            box-shadow: -2px 2px 5px 1px rgba(0, 0, 0, 0.5);
+            transition: all 0.2s ease-in;
+
+            &:hover {
+                transform: scale(1.1, 1.1);
+                background-color: #355aaa;
+            }
+        }
     }
 
     blockquote {

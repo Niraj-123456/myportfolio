@@ -123,7 +123,7 @@ const NavBar = styled.div`
         flex: 1;
         justify-content: flex-end;
         align-items: center;
-        font-size: 15px;
+        font-size: 14px;
         margin: 0;
         height: 100%;
 
@@ -136,7 +136,6 @@ const NavBar = styled.div`
              a {
                 text-decoration: none;
                 color: #f9f9f9;
-                text-transform: uppercase;
                 transition: all 0.2s ease-in;
                 cursor: pointer;
                 position: relative;
