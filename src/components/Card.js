@@ -4,11 +4,11 @@ import styled from 'styled-components'
 function Card(props) {
     return (             
         <CardImg>
-            <img src={ props.projectImg } />
-            <h1>{ props.projectName }</h1>
-            <p>{ props.projectDesc }</p>
-            <a type="button" href="#"><button>View Project</button></a>
-            <a type="button" href="#"><button>View Github Repo</button></a>
+            <img src={ props.project.img } />
+            <h1>{ props.project.name }</h1>
+            <p>{ props.project.desc }</p>
+            <a type="button" href={ props.project.link ? props.project.link : '#' } target="_blank"><button>View Project</button></a>
+            <a type="button" href={ props.project.githubLink ? props.project.githubLink: '#' } target="_blank"><button>View Github Repo</button></a>
             <blockquote>Completed- { props.completed }</blockquote>
         </CardImg>
     )
