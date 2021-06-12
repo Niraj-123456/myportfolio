@@ -4,9 +4,11 @@ import styled from 'styled-components'
 function Card(props) {
     return (             
         <CardImg>
-            <img src={ props.projectImg } />
-            <h1>{ props.projectName }</h1>
-            <p>{ props.projectDesc }</p>
+            <img src={ props.project.img } />
+            <h1>{ props.project.name }</h1>
+            <p>{ props.project.desc }</p>
+            <a type="button" href={ props.project.link ? props.project.link : '#' } target="_blank"><button>View Project</button></a>
+            <a type="button" href={ props.project.githubLink ? props.project.githubLink: '#' } target="_blank"><button>View Github Repo</button></a>
             <blockquote>Completed- { props.completed }</blockquote>
         </CardImg>
     )
@@ -31,12 +33,39 @@ const CardImg = styled.div`
         box-sizing: content-box;
     }
 
+    h1 {
+        padding: 0 10px;
+    }
+
     p {
-        font-size: 13px;
+        font-size: 15px;
         font-weight: 300;
         opacity: 0.8;
         margin: auto;
         padding: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        
+        button {
+            height: 40px;
+            background-color: #355c7a;
+            border: none;
+            margin: 10px;
+            padding: 0 10px;
+            cursor: pointer;
+            color: #fff;
+            border-radius: 4px;
+            letter-spacing: 2px;
+            box-shadow: -2px 2px 5px 1px rgba(0, 0, 0, 0.5);
+            transition: all 0.2s ease-in;
+
+            &:hover {
+                transform: scale(1.1, 1.1);
+                background-color: #355aaa;
+            }
+        }
     }
 
     blockquote {

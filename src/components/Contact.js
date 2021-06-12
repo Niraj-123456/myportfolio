@@ -5,9 +5,14 @@ function Contact() {
     return (
         <Main id="contact">
             <Heading>Contact Me</Heading>
-            <Content>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <Content>
+                <form>
+                    <input type="text" placeholder="Enter Your Name" />
+                    <input type="text" placeholder="Enter Your Email" />
+                    <input type="text" placeholder="Enter Your Address" />
+                    <input type="text" placeholder="Enter Your Phone Number" />
+                    <button type="submit">Submit</button>
+                </form>
             </Content>
         </Main>
     )
@@ -19,7 +24,9 @@ const Main = styled.div`
     height: 600px;
     width: 90%;
     margin: auto;
+    margin-top: 150px;
     color: #f9f9f9;
+    letter-spacing: 2px;
 `
 
 const Heading = styled.h1`
@@ -32,4 +39,49 @@ const Content = styled.p`
     text-align: center;
     font-size: 16px;
     font-weight: 300;
+
+    form {
+        width: 80%;
+        height: 500px;
+        margin: auto;
+        box-shadow: -2px 5px 5px 5px rgba(0, 0, 0, 0.5);
+        border-radius: 4px
+    }
+
+    input[type=text], button {
+        display: inline-block;
+        margin-top: 40px;
+        width: 50%;
+        height: 40px;
+        border-radius: 4px;
+        border: none;
+        outline: none;
+        box-shadow: -2px 5px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    input[type=text] {
+        padding: 0 20px;
+        font-size: 15px;
+
+        &:focus {
+            background-color: rgba(100, 150, 150, 0.2);
+            color: #fff;
+        }
+    }
+
+    input[type=text]:nth-child(1){
+        margin-top: 80px;
+    }
+
+    button {
+        background-color: green;
+        color: #fff;
+        font-size: 20px;
+        transition: all 0.2s ease-in;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1, 1.1);
+        }
+    }
 `

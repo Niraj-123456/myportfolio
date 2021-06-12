@@ -5,38 +5,53 @@ import Card from './Card'
 const projectDataArr = [
     {
       id: '1',
-      projectName: 'Project 1',
-      projectImg: 'https://previews.123rf.com/images/sdecoret/sdecoret1610/sdecoret161000629/63999852-hand-drawn-project-presentation-on-blue-background.jpg',
-      projectDesc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      project: {
+        name: 'Basic JavaScript Project',
+        img: 'images/screenshot-niraj-123456.github.io-2021.05.26-20_47_53.png',
+        desc: 'This project is a basic javascript project which includes different apps such as rock, paper, scissor game, cat image generator using flex box, age convertor and lastly blackjack game.',
+        link: 'https://niraj-123456.github.io/nirajlama-javascriptproject.github.io/',
+        githubLink: 'https://github.com/Niraj-123456/nirajlama-javascriptproject.github.io.git',
+      },
       completionDate: 'April 1, 2020'
     },
     {
       id: '2',
-      projectName: 'Project 2',
-      projectImg: 'https://previews.123rf.com/images/engkritchaya/engkritchaya1703/engkritchaya170300102/75165087-header-for-architect-concept-with-equipment-of-creative-project-background-architect-desk-.jpg',
-      projectDesc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      project: {
+        name: 'Disney Plus Clone using Reactjs, Redux & Styled-Components',
+        img: 'https://previews.123rf.com/images/engkritchaya/engkritchaya1703/engkritchaya170300102/75165087-header-for-architect-concept-with-equipment-of-creative-project-background-architect-desk-.jpg',
+        desc: 'This project is a clone of disney plus app using reactjs, redux and styled components. This project includes firebase for a backend database for content and user login.', 
+        link: 'https://niraj-123456.github.io/disney-plus-clone/',
+        githubLink: 'https://github.com/Niraj-123456/disney-plus-clone.git',
+      },
       completionDate: 'May 1, 2020'
     },
     {
       id: '3',
-      projectName: 'Project 3',
-      projectImg: 'https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3978884.jpg',
-      projectDesc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      project: {
+        name: 'React Project Diary',
+        img: 'https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3978884.jpg',
+        desc: 'This React project includes different apps such as tic tac toe game, clock app, timer and blackjack game using react hooks.',
+        link: 'https://niraj-123456.github.io/nirajlama-javascriptproject.github.io/',
+        githubLink: 'https://github.com/Niraj-123456/reactjs-project-diary.git',
+      },
       completionDate: 'June 1, 2020'
     },
     {
       id: '4',
-      projectName: 'Project 4',
-      projectImg: 'https://i.pinimg.com/736x/da/86/41/da86413d9c1d2fa2bdd1bffcc2504979.jpg',
-      projectDesc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      project: {
+        name: 'Internship Challenge',
+        img: 'images/frontend_challenge.png',
+        desc: 'This project is a frontend challenge for an internship by younginnovations. This is a pure HTML5, CSS and JavaScript project with interactivity. It also has some animations and is fully responsive site.',
+        link: 'https://niraj-123456.github.io/yipl-frontend-challenge/',
+        githubLink: 'https://github.com/Niraj-123456/yipl-frontend-challenge.git',
+      }, 
       completionDate: 'August 1, 2020'
     }
   ]
 
 const projectData = projectDataArr.map((data, id) => {
     return(
-        <Card key={data.id} projectName={data.projectName} projectImg={data.projectImg} 
-        projectDesc={data.projectDesc} completed={data.completionDate}
+        <Card key={data.id} project={data.project} completed={data.completionDate}
         />
     )
 });
@@ -65,6 +80,7 @@ const Main = styled.div`
     width: 80%;
     margin: auto;
     margin-top: 100px;
+    letter-spacing: 2px;
 `
 
 const Heading = styled.h1`
