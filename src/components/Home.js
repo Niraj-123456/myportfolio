@@ -41,7 +41,7 @@ const projectDataArr = [
       project: {
         name: 'Internship Challenge',
         img: 'images/frontend_challenge.png',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        desc: 'This project is a frontend challenge for an internship by younginnovations. This is a pure HTML5, CSS and JavaScript project with interactivity. It also has some animations and is fully responsive site.',
         link: 'https://niraj-123456.github.io/yipl-frontend-challenge/',
         githubLink: 'https://github.com/Niraj-123456/yipl-frontend-challenge.git',
       }, 

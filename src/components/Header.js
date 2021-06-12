@@ -21,7 +21,7 @@ function Header() {
             <HeroImage>
                 <Name>
                     <h1>Hello, I'm Niraj Lama</h1>
-                    <h4>Front End Developer</h4>
+                    <h4>Front End Developer Looking For Internship Opportunity in ReactJs</h4>
                     <i className="fas fa-arrow-circle-down"></i>
                     <p>Welcome</p>
                 </Name>
@@ -77,6 +77,7 @@ const Name = styled.div`
     h4 {
         font-size: 20px;
         font-weight: 300;
+        letter-spacing: 2px;
     }
 
     i{
