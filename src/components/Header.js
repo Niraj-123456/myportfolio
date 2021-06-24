@@ -14,7 +14,7 @@ function Header() {
                     <li><Link to='header' activeClass="active" spy={true} smooth={true} duration={1000} offset={-80}>Home</Link></li>
                     <li><Link to='projects' activeClass="active" spy={true} smooth={true} duration={1000} offset={-80}>Projects</Link></li>
                     <li><Link to='about' activeClass="active" spy={true} smooth={true} duration={1000} offset={-80}>About Me</Link></li>
-                    <li><Link to='contact' activeClass="active" spy={true} smooth={true} duration={1000} offset={-80}>contact Me</Link></li>
+                    <li><Link to='contact' activeClass="active" spy={true} smooth={true} duration={1000} offset={-80}>Contact Me</Link></li>
                     <li><Link to="certification" activeClass="active" spy={true} smooth={true} duration={1000} offset={-80}>Certifications</Link></li>
                 </ul>      
             </NavBar>

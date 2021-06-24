@@ -46,6 +46,28 @@ const projectDataArr = [
         githubLink: 'https://github.com/Niraj-123456/yipl-frontend-challenge.git',
       }, 
       completionDate: 'August 1, 2020'
+    },
+    {
+      id: '5',
+      project: {
+        name: 'Weather App',
+        img: 'images/frontend_challenge.png',
+        desc: 'This project is a frontend challenge for an internship by younginnovations. This is a pure HTML5, CSS and JavaScript project with interactivity. It also has some animations and is fully responsive site.',
+        link: 'https://niraj-123456.github.io/yipl-frontend-challenge/',
+        githubLink: 'https://github.com/Niraj-123456/yipl-frontend-challenge.git',
+      }, 
+      completionDate: 'March 25, 2021'
+    },
+    {
+      id: '6',
+      project: {
+        name: 'Social Media App',
+        img: 'images/frontend_challenge.png',
+        desc: 'This project is a frontend challenge for an internship by younginnovations. This is a pure HTML5, CSS and JavaScript project with interactivity. It also has some animations and is fully responsive site.',
+        link: 'https://niraj-123456.github.io/yipl-frontend-challenge/',
+        githubLink: 'https://github.com/Niraj-123456/yipl-frontend-challenge.git',
+      }, 
+      completionDate: 'June 1, 2021'
     }
   ]
 
