@@ -13,7 +13,7 @@ function Certification() {
             </Content>
             <Certificate>
                 <Card>
-                    <img src="images/reactjs_certification_img.png"/>
+                    <img src="images/reactjs_certification_img.png" alt="Reactjs-certificate"/>
                     <p>This certificate is issued by Udemy to me for the completion of Complete ReactJs Course- Basics to Advanced (2021) 
                         online course on May 4, 2021.
                     </p>
@@ -21,7 +21,7 @@ function Certification() {
                     <button>View Certificate</button></a>
                 </Card>
                 <Card>
-                    <img src="images/Reactjs-ES6-Certification.jpg"/>
+                    <img src="images/Reactjs-ES6-Certification.jpg" alt="Reactjs-ES6-Cetificate"/>
                     <p>This certificate is issued by Udemy to me for the completion of Modern JavaScript for ReactJs- ES6 online course 
                         on May 28, 2021.
                     </p>

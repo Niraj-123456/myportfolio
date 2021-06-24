@@ -11,11 +11,11 @@ function Header() {
                     <h4>My Portfolio</h4>    
                 </Logo>  
                 <ul>
-                    <li><Link to='header' activeClass="active" spy={true} smooth={true} duration={1000} offset={-80}>Home</Link></li>
-                    <li><Link to='projects' activeClass="active" spy={true} smooth={true} duration={1000} offset={-80}>Projects</Link></li>
-                    <li><Link to='about' activeClass="active" spy={true} smooth={true} duration={1000} offset={-80}>About Me</Link></li>
-                    <li><Link to='contact' activeClass="active" spy={true} smooth={true} duration={1000} offset={-80}>Contact Me</Link></li>
-                    <li><Link to="certification" activeClass="active" spy={true} smooth={true} duration={1000} offset={-80}>Certifications</Link></li>
+                    <li><Link to="header" activeClass="active" spy={true} smooth={true} duration={1000} offset={-80}>Home</Link></li>
+                    <li><Link to="projects" activeClass="active" spy={true} smooth={true} duration={1000} offset={-80}>Projects</Link></li>
+                    <li><Link to="about" activeClass="active" spy={true} smooth={true} duration={1000} offset={-80}>About Me</Link></li>
+                    <li><Link to="contact" activeClass="active" spy={true} smooth={true} duration={1000} offset={-80}>Contact Me</Link></li>
+                    <li><Link to="certification" activeClass="active" spy={true} smooth={true} duration={1000}>Certifications</Link></li>
                 </ul>      
             </NavBar>
             <HeroImage>
@@ -80,7 +80,7 @@ const Name = styled.div`
         letter-spacing: 2px;
     }
 
-    i{
+    i {
         padding: 25px 0;
         font-size: 70px;
     }
@@ -158,6 +158,7 @@ const NavBar = styled.div`
                     height: 1px;
                     width: 100%;
                     background-color: #f9f9f9;
+                    transition: all 0.2s ease-in;
                 }   
             }
         }

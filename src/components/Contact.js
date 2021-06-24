@@ -21,10 +21,11 @@ function Contact() {
 export default Contact
 
 const Main = styled.div`
-    height: 600px;
+    height: auto;
     width: 90%;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     color: #f9f9f9;
     letter-spacing: 2px;
 `
@@ -42,10 +43,10 @@ const Content = styled.p`
 
     form {
         width: 80%;
-        height: 500px;
+        height: auto;
         margin: auto;
         box-shadow: -2px 5px 5px 5px rgba(0, 0, 0, 0.5);
-        border-radius: 4px
+        border-radius: 4px;
     }
 
     input[type=text], button {
@@ -79,6 +80,7 @@ const Content = styled.p`
         font-size: 20px;
         transition: all 0.2s ease-in;
         cursor: pointer;
+        margin-bottom: 50px;
 
         &:hover {
             transform: scale(1.1, 1.1);
