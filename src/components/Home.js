@@ -52,9 +52,9 @@ const projectDataArr = [
       project: {
         name: 'Weather App',
         img: 'images/frontend_challenge.png',
-        desc: 'This project is a frontend challenge for an internship by younginnovations. This is a pure HTML5, CSS and JavaScript project with interactivity. It also has some animations and is fully responsive site.',
-        link: 'https://niraj-123456.github.io/yipl-frontend-challenge/',
-        githubLink: 'https://github.com/Niraj-123456/yipl-frontend-challenge.git',
+        desc: 'This project is a simple weather app for fetching weather infos from a free api source called openweathermap.org. It takes city name as an input and displays current weather info of the city.',
+        link: '',
+        githubLink: '',
       }, 
       completionDate: 'March 25, 2021'
     },
@@ -63,9 +63,9 @@ const projectDataArr = [
       project: {
         name: 'Social Media App',
         img: 'images/frontend_challenge.png',
-        desc: 'This project is a frontend challenge for an internship by younginnovations. This is a pure HTML5, CSS and JavaScript project with interactivity. It also has some animations and is fully responsive site.',
-        link: 'https://niraj-123456.github.io/yipl-frontend-challenge/',
-        githubLink: 'https://github.com/Niraj-123456/yipl-frontend-challenge.git',
+        desc: 'This project is my version of social media app which has an auth system for user management. After user registration and login, user can perform CRUD operation. This app is still work in progress.',
+        link: '',
+        githubLink: '',
       }, 
       completionDate: 'June 1, 2021'
     }
