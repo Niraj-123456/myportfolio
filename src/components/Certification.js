@@ -60,7 +60,6 @@ const Container = styled.div`
   margin: auto;
   text-align: center;
   letter-spacing: 2px;
-  height: 600px;
 
   h2 {
     font-size: 30px;
