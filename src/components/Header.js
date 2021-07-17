@@ -107,27 +107,34 @@ const NavBar = styled.div`
       a {
         text-decoration: none;
         color: #f9f9f9;
-        transition: all 0.2s ease-in;
         cursor: pointer;
+        transition: all 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
         position: relative;
 
         &:hover {
           color: gray;
         }
 
-        &.active {
-          color: gray;
-        }
-
-        &.active::before {
+        &:after {
           content: "";
           position: absolute;
           left: 0;
           bottom: -10px;
           height: 1px;
           width: 100%;
+          opacity: 0;
+          transform-origin: left center;
+          transform: scaleX(0);
           background-color: #f9f9f9;
-          transition: all 0.2s ease-in;
+          transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+        }
+      }
+
+      &:active {
+        a:after {
+          transform: scaleX(1);
+          opacity: 1;
+          color: gray;
         }
       }
     }
