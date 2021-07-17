@@ -59,7 +59,7 @@ const projectDataArr = [
     id: "6",
     project: {
       name: "Social Media App",
-      img: "images/social_media_app_screenshot.jpg",
+      img: "images/social_media_app_screenshot.JPG",
       desc: "This project is my version of social media app which has an auth system for user management. After user registration and login, user can perform CRUD operation. This app is still work in progress.",
       link: "https://niraj-123456.github.io/my-socialmedia-app/",
       githubLink: "",
