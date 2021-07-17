@@ -3,7 +3,7 @@ const projectDataArr = [
     id: "1",
     project: {
       name: "Basic JavaScript Project",
-      img: "../public/images/screenshot-niraj-123456.github.io-2021.05.26-20_47_53.png",
+      img: "images/javascript_screenshot.png",
       desc: "This project is a basic javascript project which includes different apps such as rock, paper, scissor game, cat image generator using flex box, age convertor and lastly blackjack game.",
       link: "https://niraj-123456.github.io/nirajlama-javascriptproject.github.io/",
       githubLink:
@@ -37,7 +37,7 @@ const projectDataArr = [
     id: "4",
     project: {
       name: "Internship Challenge",
-      img: "./images/frontend_challenge.png",
+      img: "images/frontend_challenge.png",
       desc: "This project is a frontend challenge for an internship by younginnovations. This is a pure HTML5, CSS and JavaScript project with interactivity. It also has some animations and is fully responsive site.",
       link: "https://niraj-123456.github.io/yipl-frontend-challenge/",
       githubLink: "https://github.com/Niraj-123456/yipl-frontend-challenge.git",
@@ -48,7 +48,7 @@ const projectDataArr = [
     id: "5",
     project: {
       name: "Weather App",
-      img: "./images/frontend_challenge.png",
+      img: "images/frontend_challenge.png",
       desc: "This project is a simple weather app for fetching weather infos from a free api source called openweathermap.org. It takes city name as an input and displays current weather info of the city.",
       link: "",
       githubLink: "",
@@ -59,7 +59,7 @@ const projectDataArr = [
     id: "6",
     project: {
       name: "Social Media App",
-      img: "./images/social_media_app_screenshot.jpg",
+      img: "images/social_media_app_screenshot.jpg",
       desc: "This project is my version of social media app which has an auth system for user management. After user registration and login, user can perform CRUD operation. This app is still work in progress.",
       link: "https://niraj-123456.github.io/my-socialmedia-app/",
       githubLink: "",
