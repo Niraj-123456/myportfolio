@@ -115,7 +115,11 @@ const NavBar = styled.div`
           color: gray;
         }
 
-        &:after {
+        &:active {
+          color: gray;
+        }
+
+        &::after {
           content: "";
           position: absolute;
           left: 0;
@@ -128,13 +132,9 @@ const NavBar = styled.div`
           background-color: #f9f9f9;
           transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
         }
-      }
-
-      &:active {
-        a:after {
+        &:active::after {
           transform: scaleX(1);
           opacity: 1;
-          color: gray;
         }
       }
     }
