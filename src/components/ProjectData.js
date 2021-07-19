@@ -15,7 +15,7 @@ const projectDataArr = [
     id: "2",
     project: {
       name: "Disney Plus Clone using Reactjs, Redux & Styled-Components",
-      img: "https://previews.123rf.com/images/engkritchaya/engkritchaya1703/engkritchaya170300102/75165087-header-for-architect-concept-with-equipment-of-creative-project-background-architect-desk-.jpg",
+      img: "images/disney_plus_clone_screenshot.png",
       desc: "This project is a clone of disney plus app using reactjs, redux and styled components. This project includes firebase for a backend database for content and user login.",
       link: "https://niraj-123456.github.io/disney-plus-clone/",
       githubLink: "https://github.com/Niraj-123456/disney-plus-clone.git",
@@ -48,7 +48,7 @@ const projectDataArr = [
     id: "5",
     project: {
       name: "Weather App",
-      img: "images/frontend_challenge.png",
+      img: "images/weather_app_screenshot.png",
       desc: "This project is a simple weather app for fetching weather infos from a free api source called openweathermap.org. It takes city name as an input and displays current weather info of the city.",
       link: "",
       githubLink: "",
